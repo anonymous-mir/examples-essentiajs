@@ -35,12 +35,12 @@ export class EssentiaNodeFactory {
 #### essentia-worklet-processor.js
 
 ```javascript
-// import Module from 'https://unpkg.com/essentia.js@0.0.8/dist/essentia-module.js';
-import { EssentiaModule } from "essentia-wasm.module.js";
+// import EssentiaWASM
+import { EssentiaWASM } from "essentia-wasm.module.js";
 // import Essentia JS API interface
 import Essentia from "essentia.js-core.es.js";
 
-let essentia = new Essentia(EssentiaModule);
+let essentia = new Essentia(EssentiaWASM);
 
 /**
  * A simple demonstration of using essentia.js as AudioWorkletProcessor.
